@@ -45,22 +45,9 @@ Public Sub Initialize() As String
 	'How many downloadhandlers should be generated
 	App.Downloads=1
 
-	'SetupInstructions. You can use HTML to format it
-	App.setupDescription= $"
-		<b>MID:</b>
-    <ul>
-		<li>Go to https://daofm.cn/</li>
-		<li>DAOFM index page</li>
-		<li>and url will be https://music.163.com/#/user/home?id=XXXXXXX</li>
-		<li>XXXXXXX is your MID</li><br/><br/>
-	</ul>
-	"$
-
 	'IconIDs from AWTRIXER. You can add multiple if you want to display them at the same time
 	App.icons=Array As Int(1295,1296)
 
-	'needed Settings for this App (Wich can be configurate from user via webinterface)
-	App.Settings=CreateMap("MID":"")
 
 	'Tickinterval in ms (should be 65 by default, for smooth scrolling))
 	App.tick=65
@@ -78,7 +65,7 @@ End Sub
 Sub App_startDownload(jobNr As Int)
 	Select jobNr
 		Case 1
-			App.Download("https://apis.daopub.com/api/rtd/screen_data/"&App.Get("MID"))
+			App.Download("https://apis.daopub.com/api/rtd/screen_data/")
 	End Select
 
 End Sub
