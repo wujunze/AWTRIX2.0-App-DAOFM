@@ -5,11 +5,11 @@ Library1=jcore
 Library2=json
 Library3=jrandomaccessfile
 Module1=AWTRIX
-Module2=NeteaseMusic
+Module2=DAOFM
 NumberOfFiles=0
 NumberOfLibraries=3
 NumberOfModules=2
-Version=8.8
+Version=8.5
 @EndOfDesignText@
 'Draws a Rectangle'Non-UI application (console / server application)
 #Region Project Attributes 
